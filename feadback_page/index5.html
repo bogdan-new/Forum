@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Forum</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li class="Interesting_block">
+                        <p class="text_Interesting_block">Interesting</p>
+                    </li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+            <div class="wrapper_text"> 
+                <h1 class="MainTitle">Forum</h1>
+                <h3 class="textSubtitle">Feedback:</h3>
+            </div>
+
+            <div class="wrapper_reg">
+                <div id="themeContainer">
+                    <button class="theme-button">
+                        <p class="register_title">Toggle Theme</p>
+                    </button>
+                </div>	
+                <div class="register">
+                    <p class="register_title">Register</p>
+                </div>
+                <div class="login">
+                    <p class="login_title">Login</p>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Main Content -->
+        <main class="main">
+            <section class="first_block">
+                <div class="search_block"></div>
+
+                <aside class="menu_block">
+                    <h2 class="text_menu">Menu</h2>
+                    <div class="Interesting_block">
+                        <p class="text_Interesting_block">Interesting</p>
+                    </div>
+                    <div class="Questions_block">
+                        <p class="text_Questions_block">Questions</p>
+                    </div>
+                    <div class="Popular_block">
+                        <p class="text_Popular_block">Popular of the day</p>
+                    </div>
+                    <div class="Tags_block">
+                        <p class="text_Tags_block"># Tags</p>
+                    </div>
+                    <div class="feedback_block">
+                        <p class="text_feedback_block">Feedback</p>
+                    </div>
+                </aside>
+
+                <div class="wrapper_last">
+                    <img class="photographs" src="img/telegram.png" alt="Telegram">
+                    <img class="photographs" src="img/github.png" alt="GitHub">
+                    <img class="photographs" src="img/discord.png" alt="Discord">
+                    <img class="photographs" src="img/trello.png" alt="Trello">
+                    <p class="text_last">© 2024 FORUM, Inc. All rights reserved.</p>
+                </div>
+            </section>
+
+			<div class="wrapper">
+	
+				<input type="text" id="fromName" placeholder="Name">
+				<input type="email" id="email" placeholder="Email">
+			
+				<textarea  id="message" placeholder="Message"></textarea>
+			
+				<button onclick="sendEmail()">Надіслати повідомлення</button>
+			   </div>
+        </main>
+        <!-- End Main Content -->
+
+    </div>
+	<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+	publicKey: "O-jX3tB5wsePcFpOl",
+  });
+})();
+</script>
+    <script src="js/script.js"></script>
+</body>
+</html>
